@@ -1,0 +1,19 @@
+.article {
+  border: 2px solid red;
+  background: #adb;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #4906f5;
+}
+
+.article-2 {
+  border: 2px solid red;
+  background: rgb(4, 245, 84);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #f04c36;
+}

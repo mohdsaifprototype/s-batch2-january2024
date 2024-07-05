@@ -1,0 +1,29 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+section{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: antiquewhite;
+}
+
+.highlight{
+  color: blueviolet;
+}
+
+.shadow{
+  padding: 20px;
+  box-shadow: 0 0 10px black, inset 0 0 10px black;
+  border-radius: 12px;
+  margin: 10px 40px;
+  max-width: 1000px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arributes | JS DOM</title>
+  <script src="script.js" defer></script>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container-1{
+      background-color: aqua;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    Gender:
+    <form action="#">
+      <input type="radio" name="Gender" id="male" value="Male">
+      <label for="male">Male</label>
+      <input type="radio" name="Gender" id="female" value="Female">
+      <label for="female">Female</label>
+
+      <input type="button" onclick="check()" value="check">
+    </form>
+  </div>
+</body>
+</html>

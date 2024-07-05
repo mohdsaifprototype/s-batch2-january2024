@@ -1,0 +1,133 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: hsl(225, 17%, 23%);
+
+  --text-bg: hsl(7, 99%, 63%);
+
+  --c4: hsl(173, 68%, 43%);
+  --c4a: hsl(173, 68%, 43%, 0.3);
+  --c4b: hsl(173, 68%, 43%, 0.5);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
+  color: white;
+  margin: auto;
+  padding: 18px;
+  max-width: 1240px;
+}
+
+
+
+
+.options {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+input {
+  margin: 10px;
+}
+
+label {
+  --idleC: white;
+  --hoverC: white;
+  --tickC: white;
+
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 50px;
+  margin-bottom: 5px;
+  position: relative;
+  user-select: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+/* Box  */
+label::before,
+label::after {
+  content: "";
+  width: 1em;
+  height: 1em;
+  background-color: var(--idleC);
+
+  position: absolute;
+  left: -1.5em;
+
+  cursor: pointer;
+}
+
+/* Tick  */
+label::after {
+  display: none;
+  background-color: transparent;
+  width: 0.5em;
+  height: 0.8em;
+  left: -1.25em;
+  border-color: wheat;
+  border-style: solid;
+  border-width: 0 0.2em 0.2em 0;
+
+  transform: rotate(45deg);
+}
+
+label:hover::before {
+  background-color: var(--hoverC);
+}
+
+/* Select only first label before input  */
+input:checked + label::after {
+  display: inline-block;
+}
+
+input:checked + label::before {
+  background-color: var(--tickC);
+}
+
+input:disabled + label {
+  opacity: 0.4;
+  text-decoration: line-through;
+}
+
+/* Radio1 */
+.radio1 {
+  --idleC: var(--c4a);
+  --hoverC: var(--c4b);
+  --tickC: var(--c4);
+}
+
+input:checked + .radio1::after {
+  display: inline-block;
+  transform-origin: top left;
+  left: -0.9em;
+  animation: slide 0.2s ease-in-out;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-0.5em, 0.5em);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(45deg) translate(0em, 0em);
+  }
+}

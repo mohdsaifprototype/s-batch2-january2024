@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>July 05 | Quiz App using HTML, CSS & JS</title>
+  <script src="script.js" id="mainScript"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="questionDB.js"></script>
+  <script src="questionDB-pt2.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="text-center display-5 my-5 bg-primary text-light">Quiz App</h2>
+    <div>
+      <div class="display-4" id="question">Question 1</div>
+      <div class="row g-3">
+        <div class="col-6">
+          <form action="#">
+            <div class="options">
+              <input type="radio" name="options" id="opt1">
+              <label class="radio1" for="opt1">Option - 1</label>
+
+              <input type="radio" name="options" id="opt2">
+              <label class="radio1" for="opt2">Option - 2</label>
+
+              <input type="radio" name="options" id="opt3">
+              <label class="radio1" for="opt3">Option - 3</label>
+
+              <input type="radio" name="options" id="opt4">
+              <label class="radio1" for="opt4">Option - 4</label>
+            </div>
+          </form>
+        </div>
+        <div class="col-6">
+          <img src="https://picsum.photos/1920/1080" class="img-fluid" alt="">
+        </div>
+        <div class="col-6 text-center"><button class="btn btn-primary" type="button" id="check">Check Answer</button></div>
+        <div class="col-6 text-center"><button class="btn btn-secondary disabled" type="button" id="next">Next Question</button></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
