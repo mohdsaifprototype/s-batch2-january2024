@@ -131,3 +131,16 @@ input:checked + .radio1::after {
     transform: rotate(45deg) translate(0em, 0em);
   }
 }
+
+.start{
+  position: absolute;
+  background-color: antiquewhite;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

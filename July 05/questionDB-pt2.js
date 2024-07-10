@@ -31,3 +31,8 @@ checkBtn.addEventListener("click", () => {
 nextBtn.addEventListener("click", () => {
   console.log("Next");
 });
+
+function startQuiz() {
+  console.log("Start");
+  document.querySelector(".start").classList.add("d-none");
+}
