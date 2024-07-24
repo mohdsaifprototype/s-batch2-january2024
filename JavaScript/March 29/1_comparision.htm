@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparision | JS</title>
+</head>
+
+<body>
+  <h1>Have a look in the console</h1>
+  <script>
+    let a = 0;
+    console.log(Boolean(a)); // false
+
+    let b = "0";
+    console.log(Boolean(b)); // true
+
+    // This one will only check the values of the container
+    console.log(a == b); // true!
+    // This one will only check the values as well as the type of the container
+    console.log(a === b); // false!
+  </script>
+</body>
+
+</html>

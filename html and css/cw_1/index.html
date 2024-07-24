@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block vs. inline</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      border: 1px solid red;
+      margin: 10px;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .div{
+      width: 300px;
+      height: 200px;
+    }
+    .span{
+      /* heigth and width will not work on any element of dispay inline */
+      display: inline-block;
+      width: 300px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="div div-1">This is div-1</div>
+    <div class="div div-2">This is div-2</div>
+    <span class="span span-1">This is span-1</span>
+    <span class="span span-2">This is span-2</span>
+  </div>
+</body>
+</html>

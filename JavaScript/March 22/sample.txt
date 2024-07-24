@@ -1,0 +1,27 @@
+// Year of birth
+
+// Sanke case: year_of_birth
+// camel case: yearOfBirth
+// pascal case: YearOfBirth
+// Kebab case: year-of-birth
+
+let a, r, pi;
+
+a = pi * r * r;
+
+let area, radius;
+const PI;
+
+area = PI * radius * radius;
+
+Sentence 1: Hi! That's my new friend!
+
+Sentence 1: Hi! That's my new friend!
+
+Sentence 1: `Hi! That's my new friend!`
+Sentence 1: "Hi! That's my new friend!"
+
+Sentence 2: He said that "The Earth is round"
+Sentence 2: `He said that "The Earth is round"`
+Sentence 2: 'He said that "The Earth is round"'
+
