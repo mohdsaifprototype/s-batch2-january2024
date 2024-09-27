@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>July 31 | jQuery Effects</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("div").toggle(2000, function () {
+            alert("Callback executed");
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button>Toggle between hiding and showing the paragraphs</button>
+
+    <div>
+      <p>This is a paragraph with little content.</p>
+      <p>This is another small paragraph.</p>
+      <p>This is another small paragraph.</p>
+    </div>
+  </body>
+</html>
